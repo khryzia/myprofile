@@ -126,3 +126,87 @@ h6 {
     grid-template-columns: 1fr 1fr;
     margin: 30px;
 }
+
+@media (max-width: 768px) {
+    .align {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .img img {
+        width: 70px;
+        height: 700px;
+    }
+
+    .img img.enlarged {
+        width: 90vw;
+        height: auto;
+    }
+
+    .favourites {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2, h6 {
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2, h6 {
+        font-size: 18px;
+    }
+
+    .img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .img img.enlarged {
+        width: 90vw;
+        height: auto;
+    }
+
+    .favourites {
+        gap: 10px;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #181C14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C6A969;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFFFEC;
+}
