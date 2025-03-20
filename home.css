@@ -74,3 +74,54 @@ footer {
     color: #121929;
 }
 
+@media (max-width: 50px) {
+    .align {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    .inside {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inside {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h6, p {
+        font-size: 16px;
+    }
+
+    .about {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 14px;
+        width: 80%;
+    }
+}
+
