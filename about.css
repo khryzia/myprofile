@@ -18,14 +18,19 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
+    text-align: center;
     
 }
 
 nav li {
-    background-color: transparent;
+    background-color: #3C3D37;
     margin: 3px;
     font-size: 20px;
+    border: 8px solid #3C3D37;
+    border-radius: 5px;
+
 }
+
 
 nav li a {
     text-decoration: none;
