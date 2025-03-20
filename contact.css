@@ -73,7 +73,7 @@ nav ul li {
     color: #ECDFCC;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 168px) {
     .align {
         flex-direction: column;
         text-align: center;
