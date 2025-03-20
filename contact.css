@@ -49,7 +49,7 @@ nav ul li {
 
 }
 
-.facebook, .twitter, .instagram {
+.facebook, .instagram {
     margin: 10px;
     padding: 10px;
     font-size: 20px;
@@ -64,11 +64,6 @@ nav ul li {
 }
 
 .facebook:hover {
-    background-color: #3C3D37;
-    color: #ECDFCC;
-}
-
-.twitter:hover {
     background-color: #3C3D37;
     color: #ECDFCC;
 }
@@ -89,7 +84,7 @@ nav ul li {
         padding: 15px;
     }
 
-    .facebook, .twitter, .instagram {
+    .facebook, .instagram {
         padding: 10px 15px;
         font-size: 16px;
     }
@@ -101,7 +96,7 @@ nav ul li {
         padding: 10px;
     }
 
-    .facebook, .twitter, .instagram {
+    .facebook, .instagram {
         padding: 8px 12px;
         font-size: 14px;
     }
