@@ -140,6 +140,11 @@ button {
     margin: 10px;
 }
 
+button:hover {
+    background-color: #ECDFCC;
+    color: #3C3D37;
+}
+
 @media (max-width: 768px) {
     .align {
         flex-direction: column;
