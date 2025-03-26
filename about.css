@@ -131,6 +131,15 @@ h6 {
     margin: 30px;
 }
 
+button {
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    border: 2px solid #3C3D37;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
 @media (max-width: 768px) {
     .align {
         flex-direction: column;
