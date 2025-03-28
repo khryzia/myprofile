@@ -1,44 +1,110 @@
-body, ul{
-    background-color: #181C14;
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    color: #ECDFCC;
+    color: #034C53;
+    cursor: url(img/cursorr.cur), auto;
+}
+
+header {
+  background-image: url("15.gif");
+  min-height: 500px; 
+  background-size: cover;
+
+}
+
+h1, h2 {
+    font-family: 'Jersey 10', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+h3, h4 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
-nav {
-    width: fit-content;
+#nav {
+    position: fixed;
+    top: 0; 
+    height: 55px;
+    width: 1500px; 
+    background-color: #121929; 
+    z-index: 999; 
+    transition: top 0.5s ease;
+    margin: 10px; 
     color: #ECDFCC;
-    height: fit-content;
-    margin: auto;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 15px;
+    transition: background-color 10s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 .align {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 30px;
-    text-align: center;
+    margin: 10px;
     
 }
 
-nav li {
-    background-color: #3C3D37;
-    margin: 3px;
-    font-size: 20px;
-    border: 8px solid #3C3D37;
-    border-radius: 5px;
+nav a, .dropbtn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+nav li {
+    position: relative;
+    margin-right: 20px;
 }
 
 
 nav li a {
     text-decoration: none;
     color: #ECDFCC;
+    padding: 10px;
+    border: 1px solid #3C3D37;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 10px;
 }
 
+
 nav ul {
-    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -47,9 +113,11 @@ nav ul li {
 }
 
 .container1, h4{
-    margin: 5px;
     padding: 30px;
     font-size: 20px;
+    background-color: #F38C79;
+    width: fit-content; 
+    margin: auto;
 }
 
 h2, h1 {
@@ -117,8 +185,8 @@ h2, h1 {
 
 h6 {
     width: 1400px;
-    border: 3px solid #3C3D37;
-    background-color: #3C3D37;
+    border: 3px solid #007074;
+    background-color: #007074;
     height: 20px;
     text-align: center;
     color: #ECDFCC;
@@ -132,9 +200,9 @@ h6 {
 }
 
 button {
-    background-color: #3C3D37;
+    background-color: #007074;
     color: #ECDFCC;
-    border: 2px solid #3C3D37;
+    border: 2px solid #007074;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -142,8 +210,10 @@ button {
 
 button:hover {
     background-color: #ECDFCC;
-    color: #3C3D37;
+    color: #007074;
 }
+
+
 
 @media (max-width: 768px) {
     .align {
