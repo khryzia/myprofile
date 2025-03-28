@@ -1,25 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+
 body{
     background-image: url(12.gif);
     background-size: cover;
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
     color: #ECDFCC;
+    cursor: url(cursorr.cur), auto;
+    background-color: #181C14;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
+h1, h2 {
+    font-family: 'Jersey 10', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 
 nav {
     color: #ECDFCC;
     margin: auto;
 
 }
-
-
 .align {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px;
     text-align: center;
+    font-size: 25px;
 }
 
 nav li {
@@ -31,7 +42,6 @@ nav li {
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 
-
 }
 
 nav li a {
@@ -42,7 +52,6 @@ nav li a {
 nav li:hover {
     background-color: #121929;
 }
-
 
 nav ul {
     text-align: center;
@@ -58,6 +67,7 @@ nav ul li {
     padding: 30px;
     position: relative;
     font-size: 35px;
+    /* background-image: url(img/imgfour.jpg); */
     background-size: cover;
     color: black;
 }
@@ -110,7 +120,71 @@ footer {
     color: #121929;
 }
 
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C6A969; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFFFEC; 
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #181C14;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
 @media (max-width: 1000px) {
+
+    body {
+        background-image: url(img/12.gif);
+        background-size: cover;
+    }
     .align {
         flex-direction: column;
         text-align: center;
