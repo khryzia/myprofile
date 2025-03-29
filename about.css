@@ -215,36 +215,50 @@ button:hover {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .align {
+        display: inline-block;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        
+    }
+
+    #nav {
+        width: 80%; 
+        height: 40px;
+
+
+    }
+
+    ul {
+        margin-right: 10px;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        top: -50px;
+        align-items: center;
     }
 
     .container {
-        max-width: 100%;
+        width: fit-content; 
+        margin: 20px;
     }
 
     .img img {
-        width: 70px;
-        height: 700px;
+        width: 50px;
+        height: 50px;
     }
 
     .img img.enlarged {
-        width: 90vw;
-        height: auto;
+        width: 90px;
+        height: 90px;
     }
 
     .favourites {
         grid-template-columns: 1fr; 
-        text-align: center;
-        width: 80%;
+        gap: 20px;
+        width: 100%; 
     }
 
     h1 {
@@ -254,32 +268,74 @@ button:hover {
     h2, h6 {
         font-size: 20px;
         width: 90%;
+        margin: 0 auto;
+    }
+
+    h4 {
+        font-size: 18px;
+        text-align: center;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 412px) { 
     h1 {
-        font-size: 20px;
-    }
-
-    h2, h6 {
         font-size: 18px;
     }
 
+    h2, h6 {
+        font-size: 16px;
+    }
+
     .img img {
-        width: 90px;
-        height: 100px;
+        width: 50px;
+        height: 40px;
+        margin: 5px;
     }
 
     .img img.enlarged {
-        width: 90vw;
-        height: auto;
+        width: 90%;
+        height: 50%;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav li {
+        margin-right: 5px;
+    }
+
+    nav li a {
+        font-size: 14px;
+        padding: 8px;
     }
 
     .favourites {
+        grid-template-columns: 1fr; 
         gap: 10px;
+        width: 100%;
+    }
+
+    .container {
+        width: 80%; 
+        padding: 5px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    #nav {
+        margin: 10px;
+
     }
 }
+
 
 
 ::-webkit-scrollbar {
