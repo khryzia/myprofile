@@ -31,7 +31,7 @@ h3, h4 {
     position: fixed;
     top: 0; 
     height: 55px;
-    width: 1500px; 
+    width: 95%; 
     background-color: #121929; 
     z-index: 999; 
     transition: top 0.5s ease;
@@ -39,7 +39,7 @@ h3, h4 {
     color: #ECDFCC;
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 15px;
-    transition: background-color 10s ease, color 0.3s ease;
+    transition: background-color 0.5s ease, color 0.3s ease;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -184,7 +184,7 @@ h2, h1 {
 }
 
 h6 {
-    width: 1400px;
+    width: 95%;
     border: 3px solid #007074;
     background-color: #007074;
     height: 20px;
