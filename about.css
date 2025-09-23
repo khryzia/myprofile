@@ -50,9 +50,11 @@ h3, h4 {
 .align {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10px;
-    
+    padding: 30px;
+    align-items: center;
+    justify-items: center;    
 }
+
 
 nav a, .dropbtn {
     color: #fff;
@@ -354,3 +356,4 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #FFFFEC;
 }
+
