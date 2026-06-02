@@ -117,6 +117,30 @@ p{
     z-index:1000;
 }
 
+.close-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:1002;
+
+    background:#007074;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    padding:12px 20px;
+    font-size:16px;
+    cursor:pointer;
+
+    box-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+.close-btn:hover{
+    background:white;
+    color:#007074;
+}
+
 /* SECTIONS */
 
 h6{
