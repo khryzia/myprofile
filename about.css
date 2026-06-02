@@ -149,15 +149,15 @@ h6{
     background:#007074;
     padding:15px;
     border-radius:10px;
-    text-align:center;
-    color:white;
+    text-align: center;
+    color: white;
     font-size:1rem;
-    border:none;
-    height:auto;
+    border: none;
+    height: auto;
 }
 
 h2{
-    text-align:center;
+    text-align: center;
     margin-bottom:25px;
 }
 
@@ -165,14 +165,14 @@ h2{
 
 .favourites{
     width:min(95%,1100px);
-    margin:auto;
-    display:grid;
+    margin: auto;
+    display: grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:25px;
 }
 
 .favourites ul{
-    list-style:none;
+    list-style: none;
     background:#232820;
     padding:25px;
     border-radius:15px;
@@ -186,32 +186,63 @@ h2{
 
 .spotify{
     width:min(95%,900px);
-    margin:auto;
+    margin: auto;
 }
 
 .spotify iframe{
     width:100%;
-    border:none;
+    border: none;
 }
 
 /* BUTTON */
 
 button{
     background:#007074;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
     padding:12px 25px;
     border-radius:10px;
-    cursor:pointer;
+    cursor: pointer;
     font-size:1rem;
     transition:.3s;
     margin:30px auto;
 }
 
-button:hover{
-    background:white;
+button: hover{
+    background: white;
     color:#007074;
     transform:translateY(-3px);
+}
+
+.btn-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:40px 0;
+}
+
+/* upgraded button style */
+#secret-btn{
+    background: linear-gradient(135deg, #007074, #00a8a8);
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+
+#secret-btn:hover{
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ffffff, #c6a969);
+    color: #181C14;
+}
+
+#secret-btn:active{
+    transform: scale(0.95);
 }
 
 /* SCROLLBAR */
