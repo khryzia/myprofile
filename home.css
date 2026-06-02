@@ -44,43 +44,50 @@ nav li a:hover{
 
 /* HERO SECTION */
 
-.hero{
-    min-height:60vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px 20px;
-    background:url("imgfour.jpg") center/cover no-repeat;
-    position:relative;
+.inside{
+    margin: 30px auto;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(imgfour.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: min(90%, 1000px);
 }
 
-.hero::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.5);
+/* IMAGE INSIDE HERO */
+.hero-img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ECDFCC;
+    margin: 20px auto;
+    display: block;
+    transition: 0.3s;
 }
 
-.hero h6,
-.hero p,
-.hero a{
-    position:relative;
-    z-index:1;
+.hero-img:hover{
+    transform: scale(1.1);
 }
 
-.hero h6{
-    font-size:2rem;
-    margin-bottom:10px;
+/* BUTTON FIX */
+.about{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #007074;
+    color: white;
+    transition: 0.3s;
 }
 
-.hero p{
-    font-size:1.2rem;
-    margin-bottom:20px;
+.about:hover{
+    background: white;
+    color: #007074;
 }
 
 /* BUTTON */
