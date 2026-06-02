@@ -45,9 +45,9 @@
                 <li><b>Drink:</b> Milk Tea, Palamig sa harap ng SVNHS Taguig City</li><br>
                 <li><b>Book:</b> Too many books to list!</li><br>
                 <li><b>Music:</b> Pop, J-pop, K-pop, Rock, Alternative, OPM</li><br>
-                <li>Artist: Taylor Swift</li><br>
-                <li>TV Series: Friends, How I Met Your Mother, The big Bang Theory,</li><br>
-                <li>Fastfood: Mcdo</li><br>
+                <li><b>Artist:</b> Taylor Swift</li><br>
+                <li><b>TV Series:</b> Friends, How I Met Your Mother, The big Bang Theory,</li><br>
+                <li><b>Fastfood:</b> Mcdo</li><br>
             </ul>
             <ul>
                 <!-- <li>Animal: Dog</li><br>
@@ -80,9 +80,8 @@
             <iframe style="border-radius:20px" src="https://open.spotify.com/embed/track/7fesNTgTEMEH0ye8MOgEDY?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> <br><br>
             <iframe style="border-radius:20px" src="https://open.spotify.com/embed/track/21B4gaTWnTkuSh77iWEXdS?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> <br><br>
         </div>
-        <center>
-            <button id="secret-btn">Pink Pony Club!❤️</button>
-        </center>
+       
+            <button id="secret-btn">🎀 Secret Button 🎀</button>
 
         
         
@@ -92,23 +91,39 @@
     </div>
 
 <script>
-    document.querySelectorAll('.img img').forEach(img => {
-    
-        img.addEventListener('click', () => {
-    
-            const overlay = document.createElement('div');
-            overlay.classList.add('overlay');
-    
-            document.body.appendChild(overlay);
-            img.classList.add('enlarged');
-    
-            overlay.addEventListener('click', () => {
-                img.classList.remove('enlarged');
-                overlay.remove();
-            });
-        });
-    
+
+document.getElementById('secret-btn').addEventListener('click', () => {
+    alert('You found my heart! 💖');
+});
+
+document.querySelectorAll('.img img').forEach(img => {
+
+    img.addEventListener('click', () => {
+
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+
+        const closeBtn = document.createElement('button');
+        closeBtn.innerText = "← Back";
+        closeBtn.classList.add('close-btn');
+
+        document.body.appendChild(overlay);
+        document.body.appendChild(closeBtn);
+
+        img.classList.add('enlarged');
+
+        function closeImage() {
+            img.classList.remove('enlarged');
+            overlay.remove();
+            closeBtn.remove();
+        }
+
+        overlay.addEventListener('click', closeImage);
+        closeBtn.addEventListener('click', closeImage);
     });
+
+});
+
 </script>
 
 
