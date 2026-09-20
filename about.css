@@ -12,8 +12,6 @@ body{
     line-height:1.7;
 }
 
-/* HEADER */
-
 .align{
     display:flex;
     justify-content:space-between;
@@ -47,8 +45,6 @@ nav a:hover{
     color:#181C14;
 }
 
-/* TITLE */
-
 h1{
     text-align:center;
     margin:20px 0;
@@ -62,8 +58,6 @@ p{
     padding:0 20px;
     font-size:1.1rem;
 }
-
-/* GALLERY */
 
 .container{
     width:min(95%,1200px);
@@ -104,8 +98,6 @@ p{
     box-shadow:0 0 40px rgba(0,0,0,.8);
 }
 
-/* OVERLAY */
-
 .overlay{
     position:fixed;
     top:0;
@@ -140,8 +132,6 @@ p{
     color:#007074;
 }
 
-/* SECTIONS */
-
 h6{
     width:min(95%,1000px);
     margin:50px auto 20px;
@@ -159,8 +149,6 @@ h2{
     text-align: center;
     margin-bottom:25px;
 }
-
-/* FAVORITES */
 
 .favourites{
     width:min(95%,1100px);
@@ -181,8 +169,6 @@ h2{
     margin-bottom:15px;
 }
 
-/* SPOTIFY */
-
 .spotify{
     width:min(95%,900px);
     margin: auto;
@@ -192,8 +178,6 @@ h2{
     width:100%;
     border: none;
 }
-
-/* BUTTON */
 
 button{
     background:#007074;
@@ -207,9 +191,9 @@ button{
     margin:30px auto;
 }
 
-button: hover{
+button:hover{
     background: white;
-    color:#007074;
+    color: #007074;
     transform:translateY(-3px);
 }
 
@@ -243,8 +227,6 @@ button: hover{
     transform: scale(0.95);
 }
 
-/* SCROLLBAR */
-
 ::-webkit-scrollbar{
     width:8px;
     height:8px;
@@ -258,8 +240,6 @@ button: hover{
     background:#C6A969;
     border-radius:10px;
 }
-
-/* MOBILE */
 
 @media(max-width:768px){
 
