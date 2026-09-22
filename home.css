@@ -9,17 +9,16 @@ body{
 
 nav {
     color: #ECDFCC;
-    margin: auto;
-
+    margin: 0px;
 }
-
 
 .align {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 5%;
 }
+
 
 nav li {
     display: inline-block; 
@@ -35,6 +34,7 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #ECDFCC;
+    font-size: 18px;
 }
 
 nav li:hover {
@@ -55,23 +55,14 @@ nav ul li {
     padding: 30px;
     position: relative;
     font-size: 35px;
-    background-image: url(imgfour.jpg);
+    background-image: url(img/imgfour.jpg);
     background-size: cover;
     color: black;
 }
-
-.about {
-    text-decoration: none;
-    color: black;
-    width: fit-content;
-    background-color: #3C3D37;
-    border: 2px solid #3C3D37;
-    border-radius: 10px;
-    color: #ECDFCC;
-
-}
-
-h6, p, h1{
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 50px;
     color: #ECDFCC;
 }
 
@@ -101,16 +92,15 @@ h6, p, h1{
 
 footer {
     text-align: center;
-    background: #eee;
+    background: transparent;
     padding: 1px;
     width: 1450px;
     margin: auto auto;
-    color: #121929;
+    color: #ECDFCC;
 }
 
 @media (max-width: 1000px) {
     .align {
-        flex-direction: column;
         text-align: center;
     }
 
