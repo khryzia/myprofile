@@ -97,9 +97,23 @@ footer {
     text-align: center;
     background: transparent;
     padding: 1px;
-    width: 1450px;
+    width: 90%;
     margin: auto auto;
     color: #ECDFCC;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#181C14;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#C6A969;
+    border-radius:10px;
 }
 
 @media (max-width: 1000px) {
@@ -109,7 +123,6 @@ footer {
 
     nav ul {
         display: flex;
-        flex-direction: column;
         gap: 10px;
     }
 
@@ -148,6 +161,6 @@ footer {
 
     footer {
         font-size: 14px;
-        width: 80%;
+        width: 70%;
     }
 }
